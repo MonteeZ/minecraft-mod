@@ -21,6 +21,7 @@ public class ModTego
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         //siemao neto go typu
+        //siema typie wez
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
