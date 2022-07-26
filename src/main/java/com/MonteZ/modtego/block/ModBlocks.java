@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModTego.MOD_ID);
 
     public static final RegistryObject<Block> TURD_BLOCK = registerBlock("turd_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).friction(0.80f)), ModCreativeModeTab.DZUS_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.SAND).strength(1f).friction(0.80f)), ModCreativeModeTab.DZUS_TAB);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
